@@ -926,6 +926,7 @@
     }
 
     body.dark-mode .cs-shopping-bag {
+        transition: filter 0.25s;
         filter: invert(1);
     }
 }

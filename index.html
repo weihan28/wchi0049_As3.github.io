@@ -31,18 +31,14 @@
           <span aria-hidden="true" class="cs-line cs-line3"></span>
         </div>
       </button>
+      
       <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
       <div class="cs-ul-wrapper">
         <ul aria-expanded="false" class="cs-ul" id="cs-expanded">
-          <li class="cs-li">
-            <a class="cs-li-link cs-active" href="">
-              Home
-            </a>
-          </li>
-          <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+          
           <li class="cs-li cs-dropdown" tabindex="0">
                         <span class="cs-li-link">
-                           About
+                           Model Kits
                             <img alt="dropdown icon"
                                  aria-hidden="true"
                                  class="cs-drop-icon" decoding="async" height="15"
@@ -50,17 +46,24 @@
                         </span>
             <ul class="cs-drop-ul">
               <li class="cs-drop-li">
-                <a class="cs-li-link cs-drop-link" href="">About1</a>
+                <a class="cs-li-link cs-drop-link" href="">Cars</a>
               </li>
               <li class="cs-drop-li">
-                <a class="cs-li-link cs-drop-link" href="">About2</a>
+                <a class="cs-li-link cs-drop-link" href="">Cranes</a>
+              </li>
+              <li class="cs-drop-li">
+                <a class="cs-li-link cs-drop-link" href="">Mining</a>
+              </li>
+              <li class="cs-drop-li">
+                <a class="cs-li-link cs-drop-link" href="">Others</a>
               </li>
             </ul>
           </li>
+          
           <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
           <li class="cs-li cs-dropdown" tabindex="0">
                         <span class="cs-li-link">
-                            Services
+                           Merchandise
                             <img alt="dropdown icon"
                                  aria-hidden="true"
                                  class="cs-drop-icon" decoding="async" height="15"
@@ -68,45 +71,32 @@
                         </span>
             <ul class="cs-drop-ul">
               <li class="cs-drop-li">
-                <a class="cs-li-link cs-drop-link" href="">Registration</a>
+                <a class="cs-li-link cs-drop-link" href="">Wearables</a>
               </li>
               <li class="cs-drop-li">
-                <a class="cs-li-link cs-drop-link" href="">Our Classes</a>
+                <a class="cs-li-link cs-drop-link" href="">Accessories</a>
               </li>
             </ul>
           </li>
+          
           <li class="cs-li">
             <a class="cs-li-link" href="">
-              Blog
-            </a>
-          </li>
-          <li class="cs-li">
-            <a class="cs-li-link" href="">
-              Contact
+              Pre-orders
             </a>
           </li>
           
           <li class="cs-li">
             <a class="cs-li-link" href="">
-              <!--              <div style="display: flex; align-items: center">-->
-              <!--                <img src="images/shopping-bag.png" style="width: 1.5rem; margin-right: 5px">Cart-->
-              <!--              </div>-->
               <div style="display: flex; align-items: center">
                 <img alt="shopping bag" aria-hidden="true" class="cs-shopping-bag" decoding="async"
-                     height="15" src="images/shopping-bag.png" style="height: 100%; width: 25px" width="15">Cart
+                     height="15" src="images/shopping_cart.png" style="height: 100%; width: 25px" width="15">Cart
               </div>
-            
             </a>
           </li>
         
         </ul>
       </div>
     </nav>
-    
-    <!--    <img alt="shopping bag" aria-hidden="true" class="cs-shopping-bag" decoding="async"-->
-    <!--         height="15" src="images/shopping-bag.png" style="height: 100%; width: 25px" width="15">-->
-    <!--    <img alt="shopping bag" aria-hidden="true" class="cs-shopping-bag" decoding="async"-->
-    <!--         height="15" src="images/shopping-bag.png" style="height: 100%; width: 25px" width="15">-->
     
     <!--    Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
     <button aria-label="dark mode toggle" id="dark-mode-toggle">
