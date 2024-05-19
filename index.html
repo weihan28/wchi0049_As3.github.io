@@ -7,6 +7,19 @@
   <link href="styles/global.css" rel="stylesheet"/>
   <link href="styles/header.css" rel="stylesheet"/>
   <link href="styles/dark.css" rel="stylesheet"/>
+  <link href="styles/hero.css" rel="stylesheet"/>
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 <body>
 <!-- ============================================ -->
@@ -88,7 +101,7 @@
           <li class="cs-li">
             <a class="cs-li-link" href="">
               <div style="display: flex; align-items: center">
-                <img alt="shopping bag" aria-hidden="true" class="cs-shopping-bag" decoding="async"
+                <img alt="shopping cart" aria-hidden="true" class="cs-shopping-cart" decoding="async"
                      height="15" src="images/shopping_cart.png" style="height: 100%; width: 25px" width="15">Cart
               </div>
             </a>
@@ -107,6 +120,29 @@
     </button>
   </div>
 </header>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-219">
+  <div class="cs-container">
+    <h1 class="cs-title">Chevrolet Camaro Supercar</h1>
+    <p class="cs-text">
+      From the RaceTrack to the Display Case
+    </p>
+    <a class="cs-button-solid" href="">Find out more</a>
+  </div>
+  
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source media="(max-width: 600px)" srcset="images/chevrolet-camaro.jpg">
+    <source media="(min-width: 601px)" srcset="images/chevrolet-camaro.jpg">
+    <img alt="kitchen" aria-hidden="true" decoding="async" height="1500"
+         src="images/chevrolet-camaro.jpg" width="2250">
+  </picture>
+</section>
+
 
 <script src="javascript/header.js"></script>
 <script src="javascript/dark.js"></script>

@@ -286,9 +286,9 @@
     #cs-navigation .cs-ul-wrapper {
         width: 100%;
         height: auto;
-        padding-bottom: 2.4em;
+        padding-bottom: 2em;
         background-color: #fff;
-        border-radius: 0 0 1.5rem 1.5rem;
+        /*border-radius: 0 0 1.5rem 1.5rem;*/
         position: absolute;
         top: 85%;
         left: 0;
@@ -419,7 +419,7 @@
     }
 
     body.dark-mode #cs-navigation .cs-toggle {
-        background-color: var(--secondary);
+        background-color: var(--primary);
     }
 
     body.dark-mode #cs-navigation .cs-phone {
@@ -443,7 +443,7 @@
         color: var(--bodyTextColorWhite);
     }
 
-    body.dark-mode .cs-shopping-bag {
+    body.dark-mode .cs-shopping-cart {
         filter: invert(1);
     }
 }
@@ -640,7 +640,7 @@
         display: none;
     }
 
-    #cs-navigation .cs-shopping-bag {
+    #cs-navigation .cs-shopping-cart {
         width: 1.5rem;
         margin-right: 5px
     }
@@ -925,7 +925,7 @@
         color: var(--secondary);
     }
 
-    body.dark-mode .cs-shopping-bag {
+    body.dark-mode .cs-shopping-cart {
         transition: filter 0.25s;
         filter: invert(1);
     }
