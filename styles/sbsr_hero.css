@@ -102,7 +102,7 @@
         height: 125rem;
         margin-left: -27.75rem;
         background-color: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(0.001px);
+        backdrop-filter: blur(0px);
         position: absolute;
         display: none;
         top: -12.5em;
