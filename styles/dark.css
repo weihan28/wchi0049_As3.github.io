@@ -63,7 +63,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 3.75rem;
+        right: 6rem;
         width: 3rem;
         height: 3rem;
         background: transparent;
@@ -116,3 +116,4 @@
         /* fill: #fff; */
     }
 }
+
