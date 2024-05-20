@@ -1,0 +1,43 @@
+/* Button styles */
+.cs-button-10 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: clamp(2.875rem, 8vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    min-width: 10.875rem;
+    color: #fff;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    background-color: #f15a24;
+    box-shadow: 4px 4px 0px 0px #1a1a1a;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+    position: absolute; /* Changed to absolute */
+    bottom: 10px; /* Adjusted positioning */
+    left: 50%;
+    transform: translateX(-50%) skew(-10deg);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1; /* Ensuring it’s above other elements */
+}
+
+.cs-button-10 .cs-icon {
+    transition: transform 0.3s;
+}
+
+.cs-button-10:hover {
+    background-color: #1a1a1a;
+    box-shadow: 4px 4px 0px 0px var(--primary);
+}
+
+.cs-button-10:hover .cs-icon {
+    transform: translateX(0.25rem);
+}
+
+/* Container for positioning relative */
+.cs-image {
+    position: relative;
+}
+
