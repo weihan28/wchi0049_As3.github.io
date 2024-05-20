@@ -45,7 +45,7 @@
         padding: 0;
         margin: 0;
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         /* 16px - 20px */
         gap: clamp(1rem, 1.5vw, 1.25rem);
     }
@@ -57,7 +57,7 @@
         /* clips the image corners */
         overflow: hidden;
         display: block;
-        grid-column: span 12;
+        grid-column: span 1;
         grid-row: span 1;
         position: relative;
     }
@@ -79,15 +79,6 @@
         max-width: 100%;
         grid-template-rows: 1fr;
     }
-
-    #gallery-1152 .cs-image {
-        grid-column: span 4;
-    }
-
-    #gallery-1152 .cs-image:nth-of-type(4),
-    #gallery-1152 .cs-image:nth-of-type(5) {
-        grid-column: span 6;
-    }
 }
 
 /* Large Desktop - 1300px */
@@ -97,16 +88,7 @@
     }
 
     #gallery-1152 .cs-gallery {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    #gallery-1152 .cs-image {
-        grid-column: span 1;
-    }
-
-    #gallery-1152 .cs-image:nth-of-type(4),
-    #gallery-1152 .cs-image:nth-of-type(5) {
-        grid-column: span 1;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -120,4 +102,3 @@
         color: var(--bodyTextColorWhite);
     }
 }
-
