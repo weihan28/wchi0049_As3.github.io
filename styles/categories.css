@@ -1,0 +1,245 @@
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-281 {
+        padding: var(--sectionPadding);
+    }
+
+    #services-281 .cs-container {
+        width: 100%;
+        /* changes to 1280px on tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    #services-281 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #services-281 .cs-title {
+        max-width: 12ch;
+    }
+
+    #services-281 .cs-text {
+        max-width: 32.625rem;
+        /* 28px - 40px */
+        margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+    }
+
+    #services-281 .cs-link {
+        /* makes sure the text is always 1 line */
+        white-space: nowrap;
+        font-size: 1rem;
+        color: var(--bodyTextColor);
+        font-weight: 700;
+        text-decoration: none;
+        width: 10.125rem;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        transition: color 0.3s;
+    }
+
+    #services-281 .cs-link:hover {
+        color: var(--primary);
+    }
+
+    #services-281 .cs-link:hover svg {
+        transform: translateX(0.625rem);
+    }
+
+    #services-281 .cs-link:before {
+        /* underline */
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+    }
+
+    #services-281 .cs-link svg {
+        margin-left: 0.25rem;
+        transition: transform 0.3s;
+    }
+
+    #services-281 .cs-link svg path {
+        /* current color of the parent */
+        fill: currentColor;
+    }
+
+
+    #services-281 .cs-card-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 1.75rem;
+    }
+
+    #services-281 .cs-item {
+        list-style: none;
+        width: 48%;
+    }
+
+    #services-281 .cs-icon {
+        width: auto;
+        height: 1.875rem;
+        margin-bottom: clamp(1.25rem, 2.4vw, 1.5rem);
+    }
+
+    #services-281 .cs-h3 {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        margin: 0;
+        /* 16px - 20px */
+        margin-bottom: clamp(1rem, 2vw, 1.25rem);
+        color: var(--headerColor);
+    }
+
+    #services-281 .cs-item-text {
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+
+    /*new css style for the wrapper flexbox*/
+    #services-281 .cs-card-group-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* In Between - 500px */
+@media only screen and (min-width: 31.25rem) {
+    #services-281 .cs-container {
+        max-width: 48rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #services-281 .cs-content {
+        width: 45%;
+    }
+
+    #services-281 .cs-card-group-wrapper {
+        width: 50%;
+    }
+
+    #services-281 .cs-item {
+        width: 48%;
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: background-color 1s;
+    }
+
+    #services-281 .cs-item:hover {
+        cursor: pointer;
+        background-color: #f15a24;
+        box-shadow: 4px 4px 0px 0px var(--primary);
+    }
+
+    #services-281 .cs-item .cs-h3,
+    #services-281 .cs-item .cs-item-text {
+        transition: color 1s;
+    }
+
+    #services-281 .cs-item:hover .cs-h3,
+    #services-281 .cs-item:hover .cs-item-text {
+        color: white;
+    }
+
+    #services-281 .cs-item .cs-icon {
+        transition: filter 1s;
+    }
+
+    #services-281 .cs-item:hover .cs-icon {
+        filter: invert(1);
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-281 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+    }
+
+    #services-281 .cs-content {
+        width: 40%;
+        flex-direction: column;
+    }
+
+    #services-281 .cs-card-group-wrapper {
+        width: 55%;
+    }
+
+    #services-281 .cs-card-group {
+        justify-content: space-between;
+    }
+
+    #services-281 .cs-item {
+        width: 48%;
+    }
+
+
+}
+
+/*!* Dark Mode *!*/
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #services-281 .cs-title,
+    body.dark-mode #services-281 .cs-text,
+    body.dark-mode #services-281 .cs-link,
+    body.dark-mode #services-281 .cs-item-text,
+    body.dark-mode #services-281 .cs-h3 {
+        color: var(--bodyTextColorWhite);
+    }
+
+    body.dark-mode #services-281 .cs-text {
+        opacity: 0.8;
+    }
+
+    body.dark-mode #services-281 .cs-icon {
+        /* turns it white */
+        filter: grayscale(1) brightness(1000%);
+    }
+
+
+    #services-281 .cs-item .cs-h3,
+    #services-281 .cs-item .cs-item-text {
+        transition: color 0.25s;
+    }
+
+    body #services-281 .cs-item .cs-icon {
+        transition: filter 0.25s;
+    }
+
+    body.dark-mode #services-281 .cs-item .cs-icon {
+        filter: invert(1);
+    }
+}

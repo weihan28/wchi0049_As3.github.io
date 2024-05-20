@@ -925,8 +925,11 @@
         color: var(--secondary);
     }
 
-    body.dark-mode .cs-shopping-cart {
+    body .cs-shopping-cart {
         transition: filter 0.25s;
+    }
+
+    body.dark-mode .cs-shopping-cart {
         filter: invert(1);
     }
 }
