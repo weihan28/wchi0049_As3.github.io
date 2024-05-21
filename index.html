@@ -25,6 +25,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet"/>
 </head>
 <body>
 <!-- ============================================ -->
@@ -194,7 +195,7 @@
 </section>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--           (New Additions)Gallery             -->
 <!-- ============================================ -->
 
 <section id="gallery-1152">
@@ -206,15 +207,19 @@
     <div class="cs-gallery">
       <!--Picture 1-->
       <div class="cs-image">
-        <picture>
-          <source media="(max-width: 600px)"
-                  srcset="images/ferrari_f40.jpg">
-          <source media="(min-width: 601px)"
-                  srcset="images/ferrari_f40.jpg">
-          <img alt="gallery" decoding="async"
-               height="320" loading="lazy" src="images/ferrari_f40.jpg"
-               width="272">
-        </picture>
+        <a data-fancybox="gallery_ferrari" href="images/ferrari_f40.jpg">
+          <picture>
+            <source media="(max-width: 600px)"
+                    srcset="images/ferrari_f40.jpg">
+            <source media="(min-width: 601px)"
+                    srcset="images/ferrari_f40.jpg">
+            <img alt="gallery" decoding="async"
+                 height="320" loading="lazy" src="images/ferrari_f40.jpg"
+                 width="272">
+          </picture>
+        </a>
+        <a data-fancybox="gallery_ferrari" href="images/ferrari_f40_2.jpg"></a>
+        <a data-fancybox="gallery_ferrari" href="images/ferrari_f40_3.jpg"></a>
         <a aria-label="read more about us" class="cs-button-10" href="#">
           Read More
           <svg aria-hidden="true" class="cs-icon" fill="none" height="24" viewBox="0 0 30 24" width="30"
@@ -228,17 +233,22 @@
           </svg>
         </a>
       </div>
+      
       <!--Picture 2-->
       <div class="cs-image">
-        <picture>
-          <source media="(max-width: 600px)"
-                  srcset="images/lamborghini_3.jpg">
-          <source media="(min-width: 601px)"
-                  srcset="images/lamborghini_3.jpg">
-          <img alt="gallery" decoding="async"
-               height="320" loading="lazy" src="images/lamborghini_3.jpg"
-               width="272">
-        </picture>
+        <a data-fancybox="gallery_lamborghini" href="images/lamborghini_3.jpg">
+          <picture>
+            <source media="(max-width: 600px)"
+                    srcset="images/lamborghini_3.jpg">
+            <source media="(min-width: 601px)"
+                    srcset="images/lamborghini_3.jpg">
+            <img alt="gallery" decoding="async"
+                 height="320" loading="lazy" src="images/lamborghini_3.jpg"
+                 width="272">
+          </picture>
+        </a>
+        <a data-fancybox="gallery_lamborghini" href="images/lamborghini_2.jpg"></a>
+        <a data-fancybox="gallery_lamborghini" href="images/lamborghini_1.jpg"></a>
         <a aria-label="read more about us" class="cs-button-10" href="#">
           Read More
           <svg aria-hidden="true" class="cs-icon" fill="none" height="24" viewBox="0 0 30 24" width="30"
@@ -252,17 +262,23 @@
           </svg>
         </a>
       </div>
+      
       <!--Picture 3-->
       <div class="cs-image">
-        <picture>
-          <source media="(max-width: 600px)"
-                  srcset="images/vw_2.jpg">
-          <source media="(min-width: 601px)"
-                  srcset="images/vw_2.jpg">
-          <img alt="gallery" decoding="async"
-               height="320" loading="lazy" src="images/vw_2.jpg"
-               width="272">
-        </picture>
+        <a data-fancybox="gallery_vw" href="images/vw_2.jpg">
+          <picture>
+            <source media="(max-width: 600px)"
+                    srcset="images/vw_2.jpg">
+            <source media="(min-width: 601px)"
+                    srcset="images/vw_2.jpg">
+            <img alt="gallery" decoding="async"
+                 height="320" loading="lazy" src="images/vw_2.jpg"
+                 width="272">
+          </picture>
+        </a>
+        <a data-fancybox="gallery_vw" href="images/vw_3.jpg"></a>
+        <a data-fancybox="gallery_vw" href="images/vw_1.jpg"></a>
+        
         <a aria-label="read more about us" class="cs-button-10" href="#">
           Read More
           <svg aria-hidden="true" class="cs-icon" fill="none" height="24" viewBox="0 0 30 24" width="30"
@@ -281,7 +297,7 @@
 </section>
 
 <!-- ============================================ -->
-<!--                  Services                    -->
+<!--             (Categories)Services             -->
 <!-- ============================================ -->
 
 <section id="services-281">
@@ -432,5 +448,8 @@
 
 <script src="javascript/header.js"></script>
 <script src="javascript/dark.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="javascript/fancybox.js"></script>
 </body>
 </html>
