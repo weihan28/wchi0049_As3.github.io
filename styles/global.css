@@ -38,6 +38,7 @@ body {
     color: var(--primary);
     margin-bottom: 0.25rem;
     display: block;
+    transition: color 0.3s;
 }
 
 .cs-title {
